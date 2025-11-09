@@ -27,10 +27,10 @@ This setup provides a Nginx web server with automatic SSL certificate management
    ```bash
    ./init-letsencrypt.sh
    ```
-
+ 
 4. Start the services:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
 ## How it works
@@ -52,7 +52,7 @@ This setup provides a Nginx web server with automatic SSL certificate management
 To customize the Nginx configuration, edit the files in the `nginx/` directory. After making changes, reload the Nginx configuration:
 
 ```bash
-docker-compose exec nginx nginx -s reload
+docker compose exec nginx nginx -s reload
 ```
 
 ## Troubleshooting
